@@ -1,7 +1,9 @@
+
 let userWins = 0;
 let cpuWins = 0;
 let gameActive = true;
 let winsToWinGame = 10;
+
 
 function playerChoice(playerSelection) {
     if (!gameActive) {
@@ -25,6 +27,7 @@ function determineWinner(player, computer) {
     } else if ((player === 'rock' && computer === 'scissors') ||
                (player === 'paper' && computer === 'rock') ||
                (player === 'scissors' && computer === 'paper')) {
+
         userWins += 1;
         return 'You win!';
     } else {
