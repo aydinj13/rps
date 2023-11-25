@@ -7,14 +7,18 @@
     </head>
     <body>
         <div class="game">
-            <h2>Rock Paper Scissors</h2>
+            <h2 id="heading">Rock Paper Scissors</h2>
             <div class="choices">
-                <button onclick="playerChoice('rock')">Rock</button>
-                <button onclick="playerChoice('paper')">Paper</button>
-                <button onclick="playerChoice('scissors')">Scissors</button>
+                <button onclick="playerChoice('rock')">&#129704;</button>
+                <button onclick="playerChoice('paper')">&#128400;</button>
+                <button onclick="playerChoice('scissors')">&#9986;</button>
             </div>
             <div class="result">
                 <p id="result-text">Make your choice...</p>
+                <p id="wins-text">Wins: 0</p>
+                <p id="losses-text">Losses: 0</p>
+
+
             </div>
         </div>
     </body>
