@@ -1,7 +1,28 @@
 let userWins = 0;
 let cpuWins = 0;
 let gameActive = true;
-let winsToWinGame = 10;
+let winsToWinGame = 0;
+
+function startGame() {
+    winsToWinGame = parseInt(prompt("Enter the number of wins required to end the game (between 5 and 100):"));
+
+    if (isNaN(winsToWinGame) || winsToWinGame < 5 || winsToWinGame > 100) {
+        alert("Please enter a valid number between 5 and 100.");
+        startGame(); // Ask again for a valid input
+    } else {
+        // Start the game
+        displayGameInfo(); // Display game information
+        // You can add any additional setup logic here if needed
+    }
+}
+
+function displayGameInfo() {
+    const gameInfo = document.getElementById('game-info');
+    gameInfo.textContent = `First to ${winsToWinGame} wins!`; // Display the game info
+}
+
+// Function to start the game initially
+startGame();
 
 
 function playerChoice(playerSelection) {
