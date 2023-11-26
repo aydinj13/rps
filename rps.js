@@ -1,4 +1,3 @@
-
 let userWins = 0;
 let cpuWins = 0;
 let gameActive = true;
@@ -74,11 +73,13 @@ function checkWinConditions() {
     if (userWins === winsToWinGame) {
         alert("Congratulations! You win!");
         gameActive = false; // Set the game as ended
+        window.location.reload();
     }
 
     if (cpuWins === winsToWinGame) {
         alert("You lost! Reload the page to try again!");
         gameActive = false; // Set the game as ended
+        window.location.reload();
     }
 }
 
