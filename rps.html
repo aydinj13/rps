@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rock, Paper, Scissors!</title>
-        <link rel="stylesheet" href="rps.css">
-        <script src="rps.js"></script>
-    </head>
-    <body>
-        <div class="game">
-            <h2 id="heading">Rock Paper Scissors</h2>
-            <p id="game-info"></p>
-            <div class="choices">
-                <button onclick="playerChoice('rock')">&#129704;</button>
-                <button onclick="playerChoice('paper')">&#128400;</button>
-                <button onclick="playerChoice('scissors')">&#9986;</button>
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="rps.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+        <div class="game p-4 rounded bg-white">
+            <h1 class="text-center mb-4">Rock Paper Scissors</h1>
+            <form id="winCountForm">
+                <div class="form-group">
+                    <label for="winCount">Wins to Win:</label>
+                    <input type="number" id="winCount" class="form-control" min="5" max="100" value="10">
+                </div>
+                <button type="button" id="setWinsButton" class="btn btn-primary btn-custom" disabled>Set Wins</button>
+            </form>
+            <div class="choices mb-3 d-flex justify-content-center">
+                <button onclick="playerChoice('rock')" class="btn btn-outline-warning mr-3 px-4 py-2">&#129704;</button>
+                <button onclick="playerChoice('paper')" class="btn btn-outline-warning mr-3 px-4 py-2">&#128400;</button>
+                <button onclick="playerChoice('scissors')" class="btn btn-outline-warning mr-3 px-4 py-2">&#9986;</button>
             </div>
-            <div class="result">
-                <p id="result-text">Make your choice...</p>
-                <p id="wins-text">Wins: 0</p>
-                <p id="losses-text">Losses: 0</p>
+
+            <div class="result text-center mb-3" id="result-text"></div>
+            <div class="stats text-center">
+                <div id="wins-text" class="mb-2">Wins: 0</div>
+                <div id="losses-text">Losses: 0</div>
+
+
 
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
