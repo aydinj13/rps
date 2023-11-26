@@ -86,10 +86,12 @@ function displayResult(player, computer, result) {
     cpuWinsText.textContent = `Losses: ${cpuWins}`;
 }
 
+
 // Function to display game information based on winsToWinGame
 function displayGameInfo() {
     const gameInfo = document.getElementById('game-info');
     gameInfo.textContent = `First to ${winsToWinGame} wins!`; // Display the game info
+
 }
 
 // Initial call to display game information
