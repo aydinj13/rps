@@ -1,0 +1,17 @@
+.game {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choices button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
