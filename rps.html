@@ -13,7 +13,7 @@
             <form id="winCountForm">
                 <div class="form-group">
                     <label for="winCount">Wins to Win:</label>
-                    <input type="number" id="winCount" class="form-control" min="5" max="100" value="10">
+                    <input type="number" id="winCount" class="form-control" min="5" max="100" placeholder="Currently Not Available" disabled>
                 </div>
                 <button type="button" id="setWinsButton" class="btn btn-primary btn-custom" disabled>Set Wins</button>
             </form>
@@ -22,16 +22,13 @@
                 <button onclick="playerChoice('paper')" class="btn btn-outline-warning mr-3 px-4 py-2">&#128400;</button>
                 <button onclick="playerChoice('scissors')" class="btn btn-outline-warning mr-3 px-4 py-2">&#9986;</button>
             </div>
-
             <div class="result text-center mb-3" id="result-text"></div>
             <div class="stats text-center">
                 <div id="wins-text" class="mb-2">Wins: 0</div>
                 <div id="losses-text">Losses: 0</div>
-
-
-
             </div>
         </div>
     </div>
 </body>
 </html>
+
